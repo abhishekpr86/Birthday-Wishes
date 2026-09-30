@@ -8,7 +8,7 @@ function BalloonPage() {
     "YOU",
     "ARE",
     "SO",
-    "SPECIAL"
+    "SPECIAL❤️"
   ];
 
   const [popped, setPopped] = useState([]);

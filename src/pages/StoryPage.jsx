@@ -14,8 +14,23 @@ function StoryPage() {
     return <h1>Story Not Found</h1>;
   }
 
-  return (
-    <div className="story-page">
+      return (
+        <div className="story-page">
+          <div className="petals">
+    {[...Array(20)].map((_, index) => (
+    <span
+    key={index}
+    className="petal"
+    style={{
+    left: `${Math.random() * 100}%`,
+    animationDelay: `${Math.random() * 10}s`,
+    animationDuration: `${8 + Math.random() * 8}s`,
+}}
+>
+🌸
+</span>
+))}
+</div>
 
       <div className="story-card">
 
