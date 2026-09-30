@@ -2,6 +2,29 @@
 .letter-card h1 {
   font-family: 'Pacifico', cursive;
 }
+.letter-card h1 {
+
+  text-align: center;
+
+  color: #ff1493;
+
+  font-family: 'Pacifico', cursive;
+
+  margin-bottom: 30px;
+
+  font-size: 3rem;
+
+}
+
+.letter-card h3 {
+
+  margin-top: 40px;
+
+  color: deeppink;
+
+  font-size: 1.5rem;
+
+}
 
 body {
   font-family: 'Poppins', sans-serif;
@@ -236,33 +259,47 @@ body {
   }
 }
 
+
 .letter-container {
   min-height: 100vh;
+
+  background: #ffe4ec;
 
   display: flex;
 
   justify-content: center;
 
-  align-items: center;
+  align-items: flex-start;
 
-  background: #ffe4ec;
+  padding: 60px 20px;
 }
-
 .letter-card {
 
-  background:
-    linear-gradient(
-      to bottom,
-      #fffdf8,
-      #fff7f0
-    );
+  width: 1000px;
 
-  border: 2px solid #ffd6e7;
+  max-width: 95%;
+
+  background: white;
+
+  border-radius: 30px;
+
+  padding: 50px 70px;
 
   box-shadow:
-    0 15px 40px rgba(0,0,0,.15);
+      0 10px 30px rgba(0,0,0,.12);
 
-  position: relative;
+}
+
+.letter-card p {
+
+  margin-bottom: 18px;
+
+  line-height: 2;
+
+  font-size: 1.1rem;
+
+  color: #333;
+
 }
 
 .wax-seal {
@@ -1166,4 +1203,122 @@ body {
   object-fit: cover;
 
   border-radius: 20px 20px 20px 20px;
+}
+
+/* ==========================
+   WHY YOU PAGE
+========================== */
+
+.why-container {
+
+  min-height: 100vh;
+
+  background: linear-gradient(
+    135deg,
+    #fff0f5,
+    #ffe4ec
+  );
+
+  padding: 60px 40px;
+
+  text-align: center;
+}
+
+.why-container h1 {
+
+  color: deeppink;
+
+  margin-bottom: 15px;
+
+  font-size: 3rem;
+}
+
+.why-subtitle {
+
+  color: #666;
+
+  margin-bottom: 50px;
+
+  font-size: 1.2rem;
+}
+
+.reasons-grid {
+
+  display: grid;
+
+  grid-template-columns:
+    repeat(
+      auto-fit,
+      minmax(280px, 1fr)
+    );
+
+  gap: 30px;
+
+  max-width: 1200px;
+
+  margin: auto;
+}
+
+.reason-card {
+
+  background: white;
+
+  padding: 30px;
+
+  border-radius: 25px;
+
+  box-shadow:
+      0 10px 30px rgba(0,0,0,.1);
+
+  transition: all .3s ease;
+
+  position: relative;
+
+  overflow: hidden;
+}
+
+.reason-card:hover {
+
+  transform:
+    translateY(-10px);
+
+}
+
+.reason-number {
+
+  width: 50px;
+
+  height: 50px;
+
+  margin: auto;
+
+  border-radius: 50%;
+
+  background:
+    linear-gradient(
+      135deg,
+      deeppink,
+      hotpink
+    );
+
+  color: white;
+
+  display: flex;
+
+  justify-content: center;
+
+  align-items: center;
+
+  font-weight: bold;
+
+  margin-bottom: 20px;
+}
+
+.reason-card p {
+
+  line-height: 1.8;
+
+  color: #444;
+
+  font-size: 1rem;
 }
