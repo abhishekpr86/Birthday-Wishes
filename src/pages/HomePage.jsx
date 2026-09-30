@@ -8,13 +8,18 @@ function HomePage() {
 
   return (
     <>
-      <Confetti />
+     
 
       <Navbar />
 
-      <FloatingHearts />
-
+      
+    <Confetti
+numberOfPieces={85}
+recycle={true}
+gravity={0.05}
+/>
       <div className="home-container">
+        <FloatingHearts />
         <h1>🎂 Happy Birthday Raksha 🎂</h1>
 
         <p>Are you excited for what's next? 💖</p>
