@@ -4,29 +4,54 @@ function NoPage() {
 
   const navigate = useNavigate();
 
-  return(
-
+  return (
     <div className="no-page">
 
+      <div className="broken-heart">
+        💔
+      </div>
+
       <h1>
-        🧸 Why Did You Click No ? 🥺
+        Wait... You Clicked NO? 🥺
       </h1>
 
-      <div style={{fontSize:"120px"}}>
-        🧸💥🧸
+      <p className="no-message">
+
+        My entire birthday surprise is shocked.
+
+        <br /><br />
+
+        The balloons stopped flying 🎈
+
+        <br />
+
+        The cake refused to bake 🎂
+
+        <br />
+
+        The flowers started crying 🌹
+
+        <br />
+
+        And Abhishek's heart has officially crashed 💔
+
+      </p>
+
+      <div className="sad-emoji-row">
+
+        😭 🥺 💔 😭 🥺
+
       </div>
 
       <button
-        className="yes-btn"
+        className="retry-btn"
         onClick={() => navigate("/home")}
       >
-        Try Again ❤️
+        Fine... I'll Click YES ❤️
       </button>
 
     </div>
-
-  )
-
+  );
 }
 
 export default NoPage;

@@ -31,11 +31,24 @@ onClick={() => navigate("/balloons")}
 YES ❤️
 </button>
  
-<button
+{/* <button
 className="no-btn"
 onClick={() => navigate("/no")}
 >
 NO 😢
+</button> */}
+
+<button
+  className="escaping-no-btn" onClick={() => navigate("/no")}
+  onMouseEnter={(e) => {
+    e.target.style.transform =
+      `translate(
+        ${Math.random()*200-100}px,
+        ${Math.random()*100-50}px
+      )`;
+  }}
+>
+  NO 😳
 </button>
       </div>
     </>
