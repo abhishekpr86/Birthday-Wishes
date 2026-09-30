@@ -8,6 +8,9 @@ import BalloonPage from "./pages/BalloonPage";
 import CakePage from "./pages/CakePage";
 import BouquetPage from "./pages/BouquetPage";
 import NoPage from "./pages/NoPage";
+import StoryAccessPage from "./pages/StoryAccessPage";
+import StoryPage from "./pages/StoryPage";
+import CelebrationPage from "./pages/CelebrationPage";
 import "./styles.css";
 
 function App() {
@@ -23,6 +26,9 @@ function App() {
         <Route path="/cake" element={<CakePage />} />
         <Route path="/bouquet" element={<BouquetPage />} />
         <Route path="/no" element={<NoPage />} />
+        <Route path="/story-access" element={<StoryAccessPage />}/>
+        <Route path="/story/:id" element={<StoryPage />}/>
+        <Route path="/celebration" element={<CelebrationPage />}/>
       </Routes>
     </BrowserRouter>
   );

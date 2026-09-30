@@ -490,3 +490,321 @@ body {
     transform:translateY(0);
   }
 }
+
+.story-access-page {
+
+  min-height: 100vh;
+
+  display: flex;
+
+  justify-content: center;
+  align-items: center;
+
+  background: linear-gradient(
+    135deg,
+    #ffd6e7,
+    #fff5fb
+  );
+
+}
+
+.access-card {
+
+  width: 500px;
+
+  background: rgba(255,255,255,.8);
+
+  backdrop-filter: blur(15px);
+
+  border-radius: 30px;
+
+  padding: 40px;
+
+  text-align: center;
+
+}
+
+.story-page {
+
+  min-height: 100vh;
+
+  background: linear-gradient(
+    135deg,
+    #ffe4f1,
+    #fff8fb
+  );
+
+  padding: 50px;
+
+}
+
+.story-card {
+
+  max-width: 900px;
+
+  margin: auto;
+
+  background: white;
+
+  padding: 50px;
+
+  border-radius: 30px;
+
+  box-shadow:
+    0 10px 40px rgba(0,0,0,.15);
+
+}
+
+
+.story-card h1 {
+
+  color: deeppink;
+
+  margin-bottom: 25px;
+
+}
+
+.story-card p {
+
+  line-height: 2;
+
+  font-size: 1.2rem;
+
+}
+
+
+.story-navigation {
+
+  margin-top: 40px;
+
+  display: flex;
+
+  justify-content: center;
+
+  gap: 20px;
+
+}
+
+
+.story-access-page {
+  min-height: 100vh;
+
+  display: flex;
+
+  justify-content: center;
+  align-items: center;
+
+  background: linear-gradient(
+    135deg,
+    #ffd6e7,
+    #fff5fb
+  );
+}
+
+.access-card {
+  width: 500px;
+
+  background: rgba(255,255,255,.8);
+
+  backdrop-filter: blur(15px);
+
+  border-radius: 30px;
+
+  padding: 40px;
+
+  text-align: center;
+
+  box-shadow:
+    0 15px 40px rgba(0,0,0,.15);
+}
+
+.access-card input {
+  width: 100%;
+
+  padding: 15px;
+
+  margin-top: 20px;
+
+  border-radius: 15px;
+
+  border: none;
+}
+
+.story-page {
+  min-height: 100vh;
+
+  background: linear-gradient(
+    135deg,
+    #ffe4f1,
+    #fff8fb
+  );
+
+  padding: 50px;
+}
+
+.story-card {
+  max-width: 900px;
+
+  margin: auto;
+
+  background: white;
+
+  border-radius: 30px;
+
+  padding: 50px;
+
+}
+
+
+.celebration-page {
+
+  min-height: 100vh;
+
+  display: flex;
+
+  justify-content: center;
+  align-items: center;
+
+  background: linear-gradient(
+    135deg,
+    #ffd6e7,
+    #fff5fb
+  );
+
+  text-align: center;
+}
+
+.celebration-card {
+
+  background: rgba(255,255,255,.85);
+
+  backdrop-filter: blur(15px);
+
+  padding: 60px;
+
+  border-radius: 30px;
+
+  box-shadow:
+    0 15px 50px rgba(0,0,0,.15);
+
+}
+
+.celebration-card h1 {
+
+  color: deeppink;
+
+  font-size: 3rem;
+
+  margin-bottom: 20px;
+
+}
+
+.celebration-card h2 {
+
+  color: hotpink;
+
+  margin-bottom: 15px;
+
+}
+
+.celebration-card p {
+
+  font-size: 1.2rem;
+
+  margin-top: 15px;
+
+}
+
+.celebration-heart {
+
+  font-size: 6rem;
+
+  margin-top: 20px;
+
+  animation: pulse 2s infinite;
+
+}
+
+.story-btn {
+
+  padding: 15px 35px;
+
+  border: none;
+
+  border-radius: 50px;
+
+  background: linear-gradient(
+    135deg,
+    #ff1493,
+    #ff69b4
+  );
+
+  color: white;
+
+  font-size: 1rem;
+
+  font-weight: bold;
+
+  cursor: pointer;
+
+  transition: all .3s ease;
+
+  box-shadow:
+     0 8px 20px rgba(255,20,147,.3);
+
+}
+
+.story-btn:hover {
+
+  transform: translateY(-3px);
+
+  box-shadow:
+    0 15px 30px rgba(255,20,147,.4);
+
+}
+
+
+.story-part-indicator {
+
+  display: inline-block;
+
+  background: hotpink;
+
+  color: white;
+
+  padding: 8px 20px;
+
+  border-radius: 30px;
+
+  margin-bottom: 20px;
+
+}
+
+
+.progress-track {
+
+  height: 10px;
+
+  width: 100%;
+
+  background: #eee;
+
+  border-radius: 20px;
+
+  margin-bottom: 30px;
+
+}
+
+.progress-value {
+
+  height: 100%;
+
+  background: linear-gradient(
+      135deg,
+      deeppink,
+      hotpink
+  );
+
+  border-radius: 20px;
+
+}

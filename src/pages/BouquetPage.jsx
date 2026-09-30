@@ -8,7 +8,7 @@ function BouquetPage() {
   useEffect(() => {
 
     setTimeout(() => {
-      navigate("/letter");
+      navigate("/story-access");
     }, 6000);
 
   }, []);
