@@ -1,34 +1,39 @@
+import memories from "../data/memories";
 import Navbar from "../components/Navbar";
 
 function MomentsPage() {
   return (
     <>
       <Navbar />
+      <div className="moments-page">
+      
 
-      <div className="moments-container">
-        <h1>📸 Our Beautiful Moments</h1>
+      <h1>
+        📸 Our Beautiful Moments
+      </h1>
 
-        <div className="gallery">
+      <div className="memories-container">
 
-          <div className="photo-card">
-            Photo 1
+        {memories.map((memory) => (
+
+          <div
+            key={memory.id}
+            className="memory-card"
+          >
+
+            <img src={memory.image} alt={memory.title}/>
+
+           
+
+            
+
           </div>
 
-          <div className="photo-card">
-            Photo 2
-          </div>
-
-          <div className="photo-card">
-            Photo 3
-          </div>
-
-          <div className="photo-card">
-            Photo 4
-          </div>
-
-        </div>
+        ))}
 
       </div>
+
+    </div>
     </>
   );
 }

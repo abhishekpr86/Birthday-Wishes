@@ -1,5 +1,7 @@
 import Confetti from "react-confetti";
 import { useNavigate } from "react-router-dom";
+import FloatingHearts from "../components/FloatingHearts";
+
 
 function CelebrationPage() {
   const navigate = useNavigate();
@@ -7,8 +9,12 @@ function CelebrationPage() {
   return (
     <div className="celebration-page">
 
-      <Confetti />
-
+      <Confetti
+numberOfPieces={85}
+recycle={true}
+gravity={0.05}
+/>
+    <FloatingHearts />
       <div className="celebration-card">
 
         <h1>🎉 Happy Birthday Raksha ❤️</h1>
